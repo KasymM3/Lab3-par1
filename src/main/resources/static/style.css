@@ -1,0 +1,31 @@
+/* базовые */
+*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+body{margin:0;background:#fff;color:#222}
+.container{max-width:860px;margin:0 auto;padding:16px}
+
+/* NAVBAR — "синяя штука" */
+.topbar{background:#2f6f7c;color:#fff}
+.topbar .container{display:flex;align-items:center;gap:16px}
+.brand{font-weight:700;color:#fff;text-decoration:none;margin-right:8px}
+.navlink{color:#dbeef3;text-decoration:none;padding:6px 8px;border-radius:6px}
+.navlink:hover{background:rgba(255,255,255,.12)}
+.search{margin-left:auto;display:flex;gap:8px}
+.search input{padding:8px 10px;border:1px solid #cfd8dc;border-radius:6px;min-width:240px}
+.search button{padding:8px 12px;border:0;background:#20606d;color:#fff;border-radius:6px;cursor:pointer}
+.search button:hover{filter:brightness(0.95)}
+
+/* таблица */
+.table{width:100%;border-collapse:collapse;margin-top:16px}
+.table th,.table td{padding:10px 12px;border-bottom:1px solid #e6e6e6;text-align:left}
+.table thead th{border-bottom:2px solid #333}
+.table tr:nth-child(even){background:#fafafa}
+
+/* выделение F */
+.fail td{color:#d60000;font-weight:600}
+
+/* форма */
+.card{display:flex;flex-direction:column;gap:14px;max-width:620px;margin-top:18px}
+.card label{display:flex;flex-direction:column;gap:6px;font-size:14px}
+.card input{padding:10px;border:1px solid #cfd8dc;border-radius:6px}
+.btn{align-self:flex-start;padding:10px 14px;background:#2e7d32;color:#fff;border:0;border-radius:6px;cursor:pointer}
+.btn:hover{filter:brightness(0.95)}

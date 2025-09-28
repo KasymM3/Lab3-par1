@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div class="container">
+<div th:replace="fragments/navbar :: nav"></div>
+<form th:action="@{/add}" method="post" th:object="${student}">
+    <label>
+        NAME:
+        <input type="text" th:field="*{name}" placeholder="Name" required>
+    </label> <br><br>
+    <label>
+        SURNAME:
+        <input type="text" th:field="*{surname}" placeholder="Surname" required>
+    </label> <br><br>
+    <label>EXAM:
+    <input type="text" th:field="*{exam}" placeholder="EXAM" required>
+    </label> <br><br>
+    <button type="submit" class="btn">ADD STUDENT</button>
+</form>
+</div>
+</body>
+</html>

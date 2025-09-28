@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>marks</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+<div th:replace="fragments/navbar :: nav"></div>
+
+<div class="container">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Exam</th>
+            <th>Mark</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="student: ${list}" th:classappend="${student.mark}== 'F'? fail: ''">
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.surname}"></td>
+            <td th:text="${student.exam}"></td>
+            <td th:text="${student.mark}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
