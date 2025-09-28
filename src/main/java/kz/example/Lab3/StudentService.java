@@ -9,14 +9,14 @@ public class StudentService {
     long id = 0;
 
     public StudentService() {
-        add(new Student( "Ilyas", "Zhuanyshev", 88));
-        add(new Student( "Serik", "Erikov", 91));
-        add(new Student( "Erik", "Serikov", 65));
-        add(new Student( "Nurzhan", "Bolatov", 48));
-        add(new Student( "Patrick", "Zuckerberg", 100));
-        add(new Student( "Sabina", "Assetova", 33));
-        add(new Student( "Madina", "Adletova", 77));
-        add(new Student( "Karina", "Serzhanova", 51));
+        add(new Student(null, "Ilyas", "Zhuanyshev", 88));
+        add(new Student(null,"Serik", "Erikov", 91));
+        add(new Student(null,"Erik", "Serikov", 65));
+        add(new Student(null, "Nurzhan", "Bolatov", 48));
+        add(new Student(null, "Patrick", "Zuckerberg", 100));
+        add(new Student(null, "Sabina", "Assetova", 33));
+        add(new Student(null, "Madina", "Adletova", 77));
+        add(new Student(null, "Karina", "Serzhanova", 51));
     }
 
 
